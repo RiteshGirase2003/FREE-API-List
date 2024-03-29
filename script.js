@@ -40,7 +40,7 @@ API Link Used : https://api.publicapis.org/entries`);
                             <p class="p-tag"> HTTPS : ${api.HTTPS} </p>
                             <div class="secure" style="margin:0 1rem ;padding: 0.1em 0.5em;">
                                 <p style="font-size: 2rem; color: ${api.HTTPS === true ? 'greenyellow' : 'red'};">&#x2022;</p>
-                                <p>${api.HTTPS === false ? 'Secure' : 'Not Secure'}</p>
+                                <p>${api.HTTPS === true ? 'Secure' : 'Not Secure'}</p>
                             </div>
                         </div>
                     `;
