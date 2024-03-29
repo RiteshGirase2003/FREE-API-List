@@ -1,0 +1,71 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base font size */
+html {
+    font-size: 16px; /* Default font size for desktop */
+}
+
+/* Media queries for different screen sizes */
+
+/* Tablets and larger devices */
+@media (min-width: 768px) {
+    html {
+        font-size: 14px; /* Decrease font size for tablets */
+    }
+}
+
+/* Phones and smaller devices */
+@media (max-width: 480px) {
+    html {
+        font-size: 12px; /* Decrease font size for smaller phones like Samsung Galaxy Fold */
+    }
+}
+
+/* Styling container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Styling individual cards */
+.card {
+    width: 30%;
+    margin: 1rem auto;
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    padding: 1em; /* Use em for padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+/* Styling 'a' tag */
+.card a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #007bff; /* Placeholder link color */
+    font-size: 1.2rem; /* Use rem for font size */
+}
+
+/* Styling span button */
+.secure {
+    color: #000000;
+    border: none;
+    border-radius: 4px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.p-span {
+    font-weight: 700;
+    font-size: 1.1rem; /* Use rem for font size */
+}
